@@ -1,15 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
 /// Steven Bertolucci
 /// 04/16/2024
-/// Master controller for movement related actions.
+/// Master controller for camera movement related actions.
 /// </summary>
 public class CameraMovement : MonoBehaviour
 {
@@ -37,7 +33,7 @@ public class CameraMovement : MonoBehaviour
     /// <summary>
     /// The speed to zoom the camera at.
     /// </summary>
-    public float ZoomSpeed = 0.5f;
+    public float ZoomSpeed = 5.0f;
 
     /// <summary>
     /// The speed to rotate the camera at.
@@ -79,6 +75,9 @@ public class CameraMovement : MonoBehaviour
     private float targetZoomLevel = 0.0f;
     private float currentZoomLevel = 0.0f;
 
+    /// <summary>
+    /// Set up initial values, calculate starting rotation axis.
+    /// </summary>
     void Start()
     {
 
@@ -93,6 +92,9 @@ public class CameraMovement : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Apply all camera movements.
+    /// </summary>
     void Update()
     {
 
