@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4912473816075107028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8088508212705745020}
+  - component: {fileID: 3158922697788311807}
+  m_Layer: 0
+  m_Name: FireOrb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8088508212705745020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4912473816075107028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3158922697788311807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4912473816075107028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d93d2572a972d488af8e5671a6cc96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caster: {fileID: 0}
+  SpellName: Fire Orb
+  Icon: {fileID: 2800000, guid: b657309278c8b6f49b03ce05d8cc93ec, type: 3}
+  DisplayTextDuringCast: 1
+  ForwardOffset: 1
+  VerticalOffset: 2
+  TravelTime: 2
+  ImpactRadius: 5
+  ImpactEffect: {fileID: -409744468542704905, guid: ecd91f92be52c3f438e58b29fa42b712,
+    type: 3}
+  ProjectilePrefab: {fileID: 3258094268485881580, guid: 0d8948fdb89702a49afd6f9042a905cb,
+    type: 3}
+  TargetPrefab: {fileID: 3123882916486375533, guid: cb95fc66ddab74e4489cde7be07a9cab,
+    type: 3}
+  TargetProjectionOffset: 0.9
+  HeightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 19.800264
+      outSlope: 19.800264
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.06432161
+    - serializedVersion: 3
+      time: 0.5
+      value: 5
+      inSlope: -0.004167627
+      outSlope: -0.004167627
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.10822708
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -21.706987
+      outSlope: -21.706987
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04020095
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

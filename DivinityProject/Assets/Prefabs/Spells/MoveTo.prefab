@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3985557159451479774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3636299623416252842}
+  - component: {fileID: 2327578219969075129}
+  m_Layer: 0
+  m_Name: MoveTo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3636299623416252842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985557159451479774}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2327578219969075129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985557159451479774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d8de24ed3a08d478d8ef8d308eb5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caster: {fileID: 0}
+  SpellName: Walk
+  Icon: {fileID: 2800000, guid: abcc24fe35f32a14da31561b925d33b7, type: 3}
+  DisplayTextDuringCast: 0
+  TargetPrefab: {fileID: 1751482105629586772, guid: f443e144b34b6fe4bbe123d30d5e09ca,
+    type: 3}
+  DotPrefab: {fileID: 1751482105629586772, guid: 8a3c88a590487d744b73c1e40523e4cb,
+    type: 3}
+  IconOffset: 2
+  PathDotSeparation: 1
+  InitialDotPoolAmount: 100

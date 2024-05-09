@@ -2,7 +2,7 @@
     "name": "PlayerInputs",
     "maps": [
         {
-            "name": "Camera",
+            "name": "General",
             "id": "3d2cd178-cebc-49d5-9d2a-ecbd8fae2ad5",
             "actions": [
                 {
@@ -33,9 +33,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MoveTo",
+                    "name": "CastSpell",
                     "type": "Button",
-                    "id": "1f59e27f-e465-4307-8cd7-f60b7ba55b13",
+                    "id": "e84c8d59-024a-4ac4-84dd-1e8b6e6a34ab",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CycleSpell",
+                    "type": "Button",
+                    "id": "130bb7be-5d86-46d5-a384-ecd2a0ca1662",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleInstructions",
+                    "type": "Button",
+                    "id": "34459ff2-290b-468b-83dd-f9838f6330c6",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -189,7 +207,7 @@
                 {
                     "name": "",
                     "id": "e4a20aa3-1eeb-429e-95f4-b95dd9d8543d",
-                    "path": "<Mouse>/middleButton",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -199,12 +217,45 @@
                 },
                 {
                     "name": "",
-                    "id": "7880e89a-6749-4fe1-a185-e73b42d4bd95",
+                    "id": "ab2dd6a8-3ae1-4eae-a501-4cf5a8b1082e",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveTo",
+                    "action": "CastSpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f625c8b-429d-422f-affe-1c76ff37e319",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleSpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce06220e-c474-4d94-9941-b3459f364c50",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleSpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36adfb40-e582-4f12-94b6-ea0ca0953b26",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleInstructions",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

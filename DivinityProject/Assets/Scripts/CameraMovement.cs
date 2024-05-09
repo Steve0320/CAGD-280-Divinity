@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
+/// CAGD 2080 - 05/09/2024
 /// Steven Bertolucci
-/// 04/16/2024
 /// Master controller for camera movement related actions.
 /// </summary>
 public class CameraMovement : MonoBehaviour
@@ -14,6 +14,8 @@ public class CameraMovement : MonoBehaviour
     /// The camera "head" component for handling zooming.
     /// </summary>
     public GameObject CameraHead;
+
+    public Transform InitialLookPoint;
 
     /// <summary>
     /// The radius of the circle the camera rotates around during a drag rotation.
@@ -84,11 +86,11 @@ public class CameraMovement : MonoBehaviour
         panDirection = Vector3.zero;
         cameraDragStart = Vector3.zero;
 
-        // Get the forward vector of the camera and flatten it to the xz plane so we can consistently apply
+        // Get the starting orbit point of the camera and flatten it to the xz plane so we can consistently apply
         // the scaling radius without worrying about y-axis rotation.
-        Vector3 cameraForward = this.transform.forward;
-        cameraForward.y = 0;
-        rotationAxis = Vector3.Normalize(cameraForward);
+        Vector3 orbitPos = InitialLookPoint.position;
+        orbitPos.y = 0;
+        rotationAxis = orbitPos;
 
     }
 
